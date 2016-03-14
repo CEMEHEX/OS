@@ -4,4 +4,4 @@ hello.o: hello.c
 hello: hello.o
 	gcc -s hello.o -o hello
 clean:
-	rm hello.o
+	rm -f hello hello.o
