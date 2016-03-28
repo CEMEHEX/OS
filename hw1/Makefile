@@ -1,7 +1,5 @@
-all:hello	
-hello.o: hello.c
-	gcc -c hello.c -o hello.o
-hello: hello.o
-	gcc -s hello.o -o hello
+all: cat
+cat : cat.c
+	gcc -o $@ $<
 clean:
-	rm -f hello hello.o
+	rm -f cat
